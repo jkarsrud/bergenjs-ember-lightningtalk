@@ -1,0 +1,80 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+    background: #faf4f1;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.container {
+	margin: 0 auto;
+    width: 800px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #e1563f;
+	font-weight: normal;
+	transition: color .1s;
+}
+
+h1 a:hover {
+	color: #252525;
+}
+
+h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+nav h1,
+nav ul {
+	display: inline-block;
+	line-height: 40px;
+	margin-right: 20px;
+}
+
+ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+.contributors li {
+	padding: 5px 10px;
+	background: #f9e7e4;
+	border: 1px solid #d4ccc8;
+	margin-bottom: 10px;
+	height: 80px;
+	border-radius: 3px;
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+	transition: background .2s;
+}
+
+.contributors li:hover {
+	background: #f2d1cb;
+}
+
+.contributors li:before,
+.contributors li:after {
+	content: '';
+	display: table;
+}
+.contributors li:after {
+	clear: both;
+}
+.contributors li img,
+.contributors li a {
+	float: left;
+	line-height: 80px;
+	height: 80px;
+}
+
+.contributors li a {
+	color: #282828;
+}
+
+.contributors li img {
+	margin-right: 10px;
+}
