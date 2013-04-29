@@ -25,18 +25,18 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="contributors">
+    {{outlet}}
     <ul class="contributors">
     {{#each contributor in controller}}
       <li>
         <img {{bindAttr src='contributor.avatar_url'}}>
-        {{#linkTo 'contributor' contributor}}{{contributor.login}}{{/linkTo}}
+        {{#linkTo 'contributors.contributor' contributor}}{{contributor.login}}{{/linkTo}}
       </li>
     {{/each}}
     </ul>
-    {{outlet}}
   </script>
 
-  <script type="text/x-handlebars" data-template-name="contributor">
+  <script type="text/x-handlebars" data-template-name="contributors/contributor">
     <h2>{{login}}</h2>
     <img {{bindAttr src='avatar_url'}}>
     <p>{{contributions}} contributions</p>

@@ -1,8 +1,9 @@
 var App = Ember.Application.create();
 
 App.Router.map(function() {
-	this.route('contributors');
-	this.route('contributor', {path: 'contributors/:contributor_id'});
+	this.resource('contributors', function() {
+		this.route('contributor', {path: ':contributor_id'});
+	});
 });
 
 App.ApplicationController = Ember.Controller.extend({
